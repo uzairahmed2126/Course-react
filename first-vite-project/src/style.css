@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: gainsboro;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 50px;
+  background: green;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
