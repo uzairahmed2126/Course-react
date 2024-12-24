@@ -1,0 +1,31 @@
+body {
+  background: lightgray;
+}
+#main-container {
+  border-radius: 10px;
+  background: #10a5a5;
+  color: black;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px;
+}
+#add,
+#remove {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 20px;
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: none;
+  background: rgb(147, 218, 32);
+  pointer-events: all;
+  &:hover {
+    background: rgb(157, 228, 0);
+    border: 1px solid green;
+  }
+}
