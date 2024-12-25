@@ -1,16 +1,18 @@
 import { useState } from "react";
 function App() {
-  let [counter, setCounter] = useState(15);
-  // let counter = 0;
+  let [counter, setCounter] = useState(0);
+
   function handleCounter(e) {
     if (e.target.id === "add") {
-      counter++;
-      setCounter(counter);
-      console.log("add");
+      if (counter < 20) {
+        counter++;
+        setCounter(counter);
+      }
     } else if (e.target.id === "remove") {
-      counter--;
-      setCounter(counter);
-      console.log("remove");
+      if (counter > 0) {
+        counter--;
+        setCounter(counter);
+      }
     }
   }
   return (
