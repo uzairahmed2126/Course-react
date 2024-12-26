@@ -3,12 +3,13 @@ function App() {
   let [counter, setCounter] = useState(0);
 
   function handleCounter(e) {
-    if (e.target.id === "add") {
+    let event = e.target;
+    if (event.id === "add") {
       if (counter < 20) {
         counter++;
         setCounter(counter);
       }
-    } else if (e.target.id === "remove") {
+    } else if (event.id === "remove") {
       if (counter > 0) {
         counter--;
         setCounter(counter);
